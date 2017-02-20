@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gService name="processjsessionidfromresponseheader_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="41" width="137" height="84">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="34" width="156" height="98">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="processjsessionidfromresponseheader_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/RulesSDKApplication_pradipta/ReadJSessionID/ProcessJSessionIDFromResponseHeader#wsdl.interface(ProcessJSessionIDFromResponseHeader)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gReference name="ResponsysServices">
+        <dgm:body borderWidth="2" arcRad="20" X="424" Y="41" width="136" height="168">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="414" Y="34" width="156" height="182">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="ResponsysServices" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="urn:ws.rsys.com#wsdl.interface(ResponsysWS)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="27" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>login</dgm:item>
+            <dgm:item>authenticateServer</dgm:item>
+            <dgm:item>loginWithCertificate</dgm:item>
+            <dgm:item>logout</dgm:item>
+            <dgm:item>createFolder</dgm:item>
+            <dgm:item>deleteFolder</dgm:item>
+            <dgm:item>listFolders</dgm:item>
+            <dgm:item>triggerCampaignMessage</dgm:item>
+            <dgm:item>HaMergeTriggerEmail</dgm:item>
+            <dgm:item>mergeTriggerEmail</dgm:item>
+            <dgm:item>mergeTriggerSMS</dgm:item>
+            <dgm:item>triggerCustomEvent</dgm:item>
+            <dgm:item>launchCampaign</dgm:item>
+            <dgm:item>scheduleCampaignLaunch</dgm:item>
+            <dgm:item>getLaunchStatus</dgm:item>
+            <dgm:item>mergeListMembers</dgm:item>
+            <dgm:item>retrieveListMembers</dgm:item>
+            <dgm:item>deleteListMembers</dgm:item>
+            <dgm:item>deleteProfileExtensionMembers</dgm:item>
+            <dgm:item>createTable</dgm:item>
+            <dgm:item>deleteTable</dgm:item>
+            <dgm:item>mergeTableRecords</dgm:item>
+            <dgm:item>retrieveTableRecords</dgm:item>
+            <dgm:item>deleteTableRecords</dgm:item>
+            <dgm:item>truncateTable</dgm:item>
+            <dgm:item>createDocument</dgm:item>
+            <dgm:item>deleteDocument</dgm:item>
+            <dgm:item>setDocumentImages</dgm:item>
+            <dgm:item>getDocumentImages</dgm:item>
+            <dgm:item>setDocumentContent</dgm:item>
+            <dgm:item>getDocumentContent</dgm:item>
+            <dgm:item>mergeListMembersRIID</dgm:item>
+            <dgm:item>mergeIntoProfileExtension</dgm:item>
+            <dgm:item>createTableWithPK</dgm:item>
+            <dgm:item>mergeTableRecordsWithPK</dgm:item>
+            <dgm:item>retrieveProfileExtensionRecords</dgm:item>
+            <dgm:item>listContentLibraryFolders</dgm:item>
+            <dgm:item>doesContentLibraryFolderExist</dgm:item>
+            <dgm:item>deleteContentLibraryFolder</dgm:item>
+            <dgm:item>createContentLibraryFolder</dgm:item>
+            <dgm:item>createContentLibraryItem</dgm:item>
+            <dgm:item>setContentLibraryItem</dgm:item>
+            <dgm:item>deleteContentLibraryItem</dgm:item>
+            <dgm:item>getContentLibraryItem</dgm:item>
+            <dgm:item>HaMergeTriggerSms</dgm:item>
+            <dgm:item>createProfileExtensionTable</dgm:item>
+        </dgm:operations>
+    </dgm:gReference>
+    <dgm:gComponent name="ProcessJSessionIDFromResponseHeader">
+        <dgm:body borderWidth="2" arcRad="20" X="226" Y="26" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="216" Y="19" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="processjsessionidfromresponseheader_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/RulesSDKApplication_pradipta/ReadJSessionID/ProcessJSessionIDFromResponseHeader#wsdl.interface(ProcessJSessionIDFromResponseHeader)"/>
+        <dgm:outputPort name="ResponsysServices" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="urn:ws.rsys.com#wsdl.interface(ResponsysWS)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gWireLink source="processjsessionidfromresponseheader_client_ep" target="ProcessJSessionIDFromResponseHeader/processjsessionidfromresponseheader_client" width="2">
+        <dgm:gSegment X1="168" Y1="51" X2="216" Y2="51"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcessJSessionIDFromResponseHeader/ResponsysServices" target="ResponsysServices" width="2">
+        <dgm:gSegment X1="366" Y1="51" X2="414" Y2="51"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+</dgm:gDiagram>

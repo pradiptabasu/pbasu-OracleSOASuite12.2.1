@@ -1,0 +1,951 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.adfdt.controller.adfc.source.migration.AdfControllerSchemaMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.common.migrator.ProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.jsf2.diagram.migrate.JsfNodeMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.migrate.TrinidadDatabindingsProjectMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTDataMapMigrator" v="11.1.1.1.0.3"/>
+      <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTWebAppConfigurationMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.migration.ProjectMigrator" v="11.1.1.1.0.11.1.1"/>
+      <value n="oracle.adfdtinternal.model.ide.placeholderdc.migrator.PlaceholderProjectMigrator" v="12.1.4.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.FormPageMigrator" v="11.1.1.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.JpsFilterMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.ADFNodeMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.PageDefinitionParameterValueMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.RestDataControlMigrator" v="12.1.4.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.WebXmlMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.common.migration.wizards.MigrationHelper" v="11.1.1.1.0.3"/>
+      <value n="oracle.adfdtinternal.view.rich.binding.migration.JarResourceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.ComponentIdNodeMigratorHelper" v="11.1.1.1.0.01"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.FacesLibraryVersionMigrator" v="11.1.1.1.0.1"/>
+      <value n="oracle.ide.model.Project" v="12.1.3.0.0;12.2.1.0.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.5;11.1.2.0.0.6"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APAdfConfigMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="11.1.1.0.1.5"/>
+      <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.0.1.5"/>
+      <value n="oracle.jbo.dt.migration.ServiceInterfaceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.dbmodeler.Migration" v="12.1.1.0.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.maven.migrator.POMNodeMigrator" v="12.2.1.0.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.jps.JpsDataMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.migrators.DeploymentMigrator" v="12.1.2.0.1"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="11.1.1"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineDBProjectMigrator" v="12.1.1.0.0"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.SXMLOfflineDBProjectMigrator" v="12.1.4.0.0"/>
+      <value n="oracle.jdevimpl.resourcebundle.XliffAddin$XliffMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.webapp.facelets.libraries.FaceletsLibraryMigrator" v="12.2.1.0.0"/>
+      <value n="oracle.jdevimpl.webapp.jsp.libraries.JspLibraryMigrator" v="11.1.1.1.4;12.1.4.0.0"/>
+      <value n="oracle.jdevimpl.webapp.jsp.taglibraries.trinidad.migration.TrinidadLibraryVersionMigrator" v="11.1.1.1.0.1"/>
+      <value n="oracle.jdevimpl.webapp.WebAppContentSetNodeMigratorHelper" v="11.1.1"/>
+      <value n="oracle.jdevimpl.webapp.WebAppProjectNodeMigratorHelper" v="12.1.2.0.0;12.2.1.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestAppClassMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestJerseyLibMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestLibraryMigrator" v="12.1.1.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestOwsmPolicyMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestPathMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestWebAppMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.jdevimpl.webservices.rest.migration.RestWeblogicWebAppMigrator" v="12.1.3.0.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.modeler.bmmigrate.management.Migration" v="11.1.1.1.0"/>
+      <value n="oracle.sb.tooling.ide.libs.SbProjectMigrator" v="12.1.4.0.0"/>
+      <value n="oracle.tip.tools.ide.fabric.addin.SCAProjectMigrator" v="11.1.1.1.0.12;11.1.1.1.0.13"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.TaskFormMigratorAddin" v="12.1.3.0.0"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.WorkflowProjectMigrator" v="12.1.2.0.0"/>
+      <value n="oracle.toplink.workbench.addin.migration.PersistenceProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.toplink.workbench.addin.migration.TopLinkProjectMigrator" v="11.1.1.1.0"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSADFLibVirtualNodeCSProvider/mdsLibVirtualNodeContentSet"/>
+      <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
+      <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
+      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
+      <string v="oracle.tip.tools.ide.ess.addin.ESSContentSetProvider/ess-content"/>
+      <string v="oracle.sb.tooling.ide.core.projects.SbProjectSettings/sbContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/cepContentSet"/>
+   </list>
+   <value n="defaultPackage" v="rulesproject"/>
+   <hash n="oracle.adfdtinternal.view.rich.setting.ADFViewSettings">
+      <value n="ENABLE_ADF_WEBAPP_LIB_SUPPORT" v="true"/>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="ADF_FACES"/>
+         <string v="ADFc"/>
+         <string v="ADFm"/>
+         <string v="Database"/>
+         <string v="JSF"/>
+         <string v="JSP"/>
+         <string v="Java"/>
+         <string v="Maven"/>
+         <string v="SOA"/>
+         <string v="TRINIDAD"/>
+         <string v="TopLink"/>
+         <string v="XML"/>
+         <string v="XML_SCHEMA"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <list n="copyRes">
+         <string v=".cpx"/>
+         <string v=".dcx"/>
+         <string v=".ejx"/>
+         <string v=".gif"/>
+         <string v=".ini"/>
+         <string v=".jpeg"/>
+         <string v=".jpg"/>
+         <string v=".png"/>
+         <string v=".properties"/>
+         <string v=".sva"/>
+         <string v=".tag"/>
+         <string v=".tld"/>
+         <string v=".wsdl"/>
+         <string v=".xcfg"/>
+         <string v=".xlf"/>
+         <string v=".xml"/>
+         <string v=".xsd"/>
+         <string v=".xsl"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
+      </list>
+      <value n="internalEncoding" v="Cp1252"/>
+      <value n="webIANAEncoding" v="UTF-8"/>
+   </hash>
+   <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
+      <hash n="profileDefinitions">
+         <hash n="RulesProject">
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="false"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <url n="location" path="SOA/"/>
+                           <value n="type" v="1"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="SOA Files"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="**/XSLNonDeployedFiles"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="SCA-INF/bpel"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".migrated/jaxb_classes"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/.rulesdesigner/jaxb_classes"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="merged"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/mdssys"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/.designer"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="SCA-INF/file-layer-registry.xml"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="SCA-INF/classes/scac.log"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="SCA-INF/classes/scac_out.xml"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="*.jpr"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="deploy/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**"/>
+                              <value n="type" v="0"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="sar-files"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="deploy/sca_RulesProject${composite.revision_id}.jar"/>
+            <value n="profileClass" v="oracle.tip.tools.ide.fabric.deploy.sar.SarProfile"/>
+            <value n="profileName" v="RulesProject"/>
+         </hash>
+      </hash>
+      <list n="profileList">
+         <string v="RulesProject"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration"/>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="RulesSDKApplication_pradipta-RulesProject-webapp"/>
+      <value n="j2eeWebContextRoot" v="RulesSDKApplication_pradipta-RulesProject-context-root"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="url-path">
+            <url path="SOA/SCA-INF/src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+            <hash n="oracle.jdevimpl.runner.debug.DebugConfiguration">
+               <value n="remoteParameter:SOA:hostname" v="PRABASU-IN.oradev.oraclecorp.com"/>
+               <value n="remoteParameter:SOA:port" v="5004"/>
+               <value n="remoteProtocol" v="SOA"/>
+            </hash>
+            <value n="remoteDebuggingProfiling" v="true"/>
+            <url n="targetURL" path="SOA\composite.xml"/>
+         </hash>
+      </hash>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="SOA Designtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="SOA Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BPEL Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mediator Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Service Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADFm Designtime API"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules Dictionary Component"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules Dictionary Task Flow"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Trinidad Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="ADF_Library_Dependencies.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Beanutils 1.6"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Logging 1.0.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Collections 3.1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Apache Http Components"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Databinding MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Library1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Web Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Library2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Page Flow Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Controller Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Controller Schema"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Web Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime Dependencies"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="TopLink"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 2.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url protocol="jar" path="file:/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibGenericDCs.jar!/"/>
+               </list>
+               <value n="description" v="Library1"/>
+               <value n="id" v="Library1"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url protocol="jar" path="file:/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/"/>
+               </list>
+               <value n="description" v="Library2"/>
+               <value n="id" v="Library2"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="SOA Designtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="SOA Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BPEL Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mediator Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Service Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADFm Designtime API"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules Dictionary Component"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Rules Dictionary Task Flow"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Trinidad Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="ADF_Library_Dependencies.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Beanutils 1.6"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Logging 1.0.4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons Collections 3.1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Apache Http Components"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF DVT Faces Databinding MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Library1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Common Web Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Library2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Page Flow Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Controller Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Controller Schema"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Web Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime Dependencies"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="TopLink"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 2.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="SOA/SCA-INF/classes/"/>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.facelets.libraries.ProjectFaceletsTagLibraries">
+      <list n="facelets-tag-libraries">
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="expBuilder"/>
+            <value n="prefix" v="eb"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibGenericDCs.jar!/META-INF/expbuilder.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/expBuilder"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="validationTable"/>
+            <value n="prefix" v="vt"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibGenericDCs.jar!/META-INF/validationtable.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/validationTable"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="rulesSharedDC"/>
+            <value n="prefix" v="rs"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/rulesshareddc.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/rulesSharedDC"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="bucketsetEditor"/>
+            <value n="prefix" v="bse"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/bucketseteditor.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/bucketsetEditor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="decisionFuncEditor"/>
+            <value n="prefix" v="dfe"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/decisionfunceditor.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/decisionFuncEditor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="globalsEditor"/>
+            <value n="prefix" v="ge"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/globalseditor.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/globalsEditor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="ruleValidationTable"/>
+            <value n="prefix" v="rvt"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/rulevalidationtable.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/ruleValidationTable"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="rulesEditor"/>
+            <value n="prefix" v="rdc"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/ruleseditor.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/editor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="ruleDictionaryDC"/>
+            <value n="prefix" v="rddc"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/ruledictionarydc.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/dictionaryEditor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="factEditor"/>
+            <value n="prefix" v="fe"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/facteditor.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/factEditor"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <value n="libraries" v="ADF Faces Components"/>
+            <value n="name" v="impexpDT"/>
+            <value n="prefix" v="iedt"/>
+            <value n="runInEditor" v="true"/>
+            <value n="showInPalette" v="true"/>
+            <value n="taglibURL" v="/C:/Oracle/Middleware1213qs/soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/impexpdt.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/impexpDT"/>
+            <value n="version" v="2.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSF Core"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="JSF Core"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsf/core"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSF HTML"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="JSF HTML"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/html_basic.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsf/html"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="Facelets Composite"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="Facelets Composite"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/composite.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsf/composite"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="Facelets"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="Facelets"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/ui.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsf/facelets"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="Mojarra Ext Utils"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="Mojarra Ext Utils"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/META-INF/mojarra_ext.taglib.xml"/>
+            <value n="URI" v="http://mojarra.dev.java.net/mojarra_ext"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSTL"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="JSTL"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/jstl-core.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsp/jstl/core"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSTL Functions"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="name" v="JSTL Functions"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/jsp/jstl/functions"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="ADF Faces Components"/>
+               <value n="version" v="11"/>
+            </hash>
+            <value n="name" v="ADF Faces Components"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view/adf-richclient-impl-11.jar!/META-INF/afu.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/adf/faces/rich"/>
+            <value n="version" v="11"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSF Compatibility Tags for Facelets"/>
+               <value n="version" v="11"/>
+            </hash>
+            <value n="name" v="JSF Compatibility Tags for Facelets"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view/adf-richclient-impl-11.jar!/META-INF/jsp.taglib.xml"/>
+            <value n="URI" v="http://java.sun.com/JSP/Page"/>
+            <value n="version" v="11"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="ADF Faces Component Tags"/>
+               <value n="version" v="11"/>
+            </hash>
+            <value n="name" v="ADF Faces Component Tags"/>
+            <value n="taglibURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view/adf-richclient-impl-11.jar!/META-INF/component.taglib.xml"/>
+            <value n="URI" v="http://xmlns.oracle.com/adf/faces/rich/component"/>
+            <value n="version" v="11"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">
+      <list n="tag-libraries">
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSF Core"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="JSF Core"/>
+            <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/META-INF/jsf_core.tld"/>
+            <value n="URI" v="http://java.sun.com/jsf/core"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="JSF HTML"/>
+               <value n="version" v="2.2"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="JSF HTML"/>
+            <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.jsf/glassfish.jsf.jar!/META-INF/html_basic.tld"/>
+            <value n="URI" v="http://java.sun.com/jsf/html"/>
+            <value n="version" v="2.2"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="ADF Faces Components"/>
+               <value n="version" v="11"/>
+            </hash>
+            <value n="jspVersion" v="1.2"/>
+            <value n="name" v="ADF Faces Components"/>
+            <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view/adf-richclient-impl-11.jar!/META-INF/afu.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/adf/faces/rich"/>
+            <value n="version" v="11"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="expBuilder"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="expBuilder"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibGenericDCs.jar!/META-INF/expBuilder.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/expBuilder"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="validationTable"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="validationTable"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibGenericDCs.jar!/META-INF/validationTable.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/validationTable"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="bucketsetEditor"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="bucketsetEditor"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/bucketsetEditor.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/bucketsetEditor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="decisionFuncEditor"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="decisionFuncEditor"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/decisionFuncEditor.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/decisionFuncEditor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="factEditor"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="factEditor"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/factEditor.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/factEditor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="globalsEditor"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="globalsEditor"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/globalsEditor.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/globalsEditor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="impexpDT"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="impexpDT"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/impexpDT.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/impexpDT"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="ruleDictionaryDC"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="ruleDictionaryDC"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/ruleDictionaryDC.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/dictionaryEditor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="rulesEditor"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="rulesEditor"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/rulesEditor.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/editor"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="rulesSharedDC"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="rulesSharedDC"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/rulesSharedDC.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/rulesSharedDC"/>
+            <value n="version" v="1.0"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
+               <value n="name" v="ruleValidationTable"/>
+               <value n="version" v="1.0"/>
+            </hash>
+            <value n="jspVersion" v="2.1"/>
+            <value n="name" v="ruleValidationTable"/>
+            <value n="tldURL" v="@oracle.home@../soa/soa/modules/oracle.soa.rules_dict_dc.webapp_11.1.1/adflibRulesSharedDC.jar!/META-INF/ruleValidationTable.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/bpel/rules/ruleValidationTable"/>
+            <value n="version" v="1.0"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider">
+      <hash n="sca-content">
+         <list n="url-path">
+            <url path="SOA/"/>
+         </list>
+      </hash>
+   </hash>
+</jpr:project>

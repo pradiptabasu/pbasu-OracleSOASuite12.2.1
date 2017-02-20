@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<RuleDictionary id="G}12b794fd:15a232556eb:-7c31" xmlns="http://xmlns.oracle.com/rules/dictionary">
+  <Name>MyRulesDictionary</Name>
+  <Alias>MyRulesDictionary</Alias>
+  <Package>rulesproject</Package>
+  <Version>12.1.1.0.0</Version>
+  <DataModel id="L}1">
+    <CreationUpdateNumber>94</CreationUpdateNumber>
+    <QualifierPattern>{member} of {fact}</QualifierPattern>
+    <JavaFactType id="J}rulesproject.ItemT">
+      <Name>rulesproject.ItemT</Name>
+      <Alias>ItemT</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>94</CreationUpdateNumber>
+      <Property id="J}rulesproject.ItemT.{extraCharge}">
+        <Name>extraCharge</Name>
+        <Alias>extraCharge</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}boolean</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}bbs</IDofBucketSet>
+        <BucketSet>boolean</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}861">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}rulesproject.ItemT.{productId}">
+        <Name>productId</Name>
+        <Alias>productId</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}java.lang.String</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}862">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}rulesproject.ItemT.{productWeight}">
+        <Name>productWeight</Name>
+        <Alias>productWeight</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}java.lang.String</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>String</Type>
+        <IDofBucketSet>G}-5b993b60:15a27abbcb5:-7c2b</IDofBucketSet>
+        <BucketSet>ShipWeightType</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}863">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}rulesproject.ItemT.{quantity}">
+        <Name>quantity</Name>
+        <Alias>quantity</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}int</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}864">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}rulesproject.ItemT.{shipSurcharge}">
+        <Name>shipSurcharge</Name>
+        <Alias>shipSurcharge</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}java.math.BigDecimal</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>BigDecimal</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}865">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}rulesproject.ItemT.{unitPrice}">
+        <Name>unitPrice</Name>
+        <Alias>unitPrice</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <IDofType>J}java.math.BigDecimal</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>BigDecimal</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}866">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public boolean rulesproject.ItemT.equals(java.lang.Object)">
+        <Name>equals</Name>
+        <Alias>equals</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c32">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.Object</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}834">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public int rulesproject.ItemT.hashCode()">
+        <Name>hashCode</Name>
+        <Alias>hashCode</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}836">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setProductId(java.lang.String)">
+        <Name>setProductId</Name>
+        <Alias>setProductId</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c31">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}838">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.lang.String rulesproject.ItemT.getProductId()">
+        <Name>getProductId</Name>
+        <Alias>getProductId</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}840">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setQuantity(int)">
+        <Name>setQuantity</Name>
+        <Alias>setQuantity</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c30">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}int</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}842">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public int rulesproject.ItemT.getQuantity()">
+        <Name>getQuantity</Name>
+        <Alias>getQuantity</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}844">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}int</IDofType>
+        <Type>int</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setUnitPrice(java.math.BigDecimal)">
+        <Name>setUnitPrice</Name>
+        <Alias>setUnitPrice</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c2f">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}java.math.BigDecimal</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}846">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.math.BigDecimal rulesproject.ItemT.getUnitPrice()">
+        <Name>getUnitPrice</Name>
+        <Alias>getUnitPrice</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}848">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.math.BigDecimal</IDofType>
+        <Type>BigDecimal</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public boolean rulesproject.ItemT.isExtraCharge()">
+        <Name>isExtraCharge</Name>
+        <Alias>isExtraCharge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}850">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setExtraCharge(boolean)">
+        <Name>setExtraCharge</Name>
+        <Alias>setExtraCharge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c2e">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}boolean</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}852">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setProductWeight(java.lang.String)">
+        <Name>setProductWeight</Name>
+        <Alias>setProductWeight</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c2d">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}854">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.lang.String rulesproject.ItemT.getProductWeight()">
+        <Name>getProductWeight</Name>
+        <Alias>getProductWeight</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}856">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void rulesproject.ItemT.setShipSurcharge(java.math.BigDecimal)">
+        <Name>setShipSurcharge</Name>
+        <Alias>setShipSurcharge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <OverloadedParameter id="G}-5b993b60:15a27abbcb5:-7c2c">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <IDsOfType>J}java.math.BigDecimal</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}858">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.math.BigDecimal rulesproject.ItemT.getShipSurcharge()">
+        <Name>getShipSurcharge</Name>
+        <Alias>getShipSurcharge</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Modifiers id="L}860">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.math.BigDecimal</IDofType>
+        <Type>BigDecimal</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public rulesproject.ItemT()">
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Visible>true</Visible>
+        <Modifiers id="L}832">
+          <CreationUpdateNumber>94</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>94</ValidationUpdateNumber>
+      <Source>file:///D:/WorkSpace/JDEV_1213_PoC/RulesSDKApplication_pradipta/RulesProject/SOA/SCA-INF/classes/</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}830">
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+    </JavaFactType>
+    <BucketSet id="G}-5b993b60:15a27abbcb5:-7c2b">
+      <Name>ShipWeightType</Name>
+      <Alias>ShipWeightType</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>94</CreationUpdateNumber>
+      <IDofType>J}java.lang.String</IDofType>
+      <ListContentID>B}nil</ListContentID>
+      <Type>String</Type>
+      <Form>LOV</Form>
+      <Bucket id="G}-5b993b60:15a27abbcb5:-7c2a">
+        <Name>otherwise</Name>
+        <Alias>otherwise</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Inclusive>true</Inclusive>
+        <Otherwise>true</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}867">
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}-5b993b60:15a27abbcb5:-7c29">
+        <Name>&quot;Light&quot;</Name>
+        <Alias>&quot;Light&quot;</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}868">
+          <Value>&quot;Light&quot;</Value>
+          <ResolvedValue>&quot;Light&quot;</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}-5b993b60:15a27abbcb5:-7c28">
+        <Name>&quot;Heavy&quot;</Name>
+        <Alias>&quot;Heavy&quot;</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}869">
+          <Value>&quot;Heavy&quot;</Value>
+          <ResolvedValue>&quot;Heavy&quot;</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <Bucket id="G}-5b993b60:15a27abbcb5:-7c27">
+        <Name>&quot;VeryHeavy&quot;</Name>
+        <Alias>&quot;VeryHeavy&quot;</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>94</CreationUpdateNumber>
+        <Inclusive>false</Inclusive>
+        <Otherwise>false</Otherwise>
+        <Excluded>false</Excluded>
+        <Expression id="L}870">
+          <Value>&quot;VeryHeavy&quot;</Value>
+          <ResolvedValue>&quot;VeryHeavy&quot;</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Bucket>
+      <CalendarForm>Date</CalendarForm>
+      <Excluded>false</Excluded>
+      <ValidationUpdateNumber>94</ValidationUpdateNumber>
+    </BucketSet>
+    <SupportsXPathEnabled>false</SupportsXPathEnabled>
+    <UpdateNumber>94</UpdateNumber>
+    <ValidationUpdateNumber>94</ValidationUpdateNumber>
+    <UpdateTime>0</UpdateTime>
+  </DataModel>
+  <RuleSet id="G}-5b993b60:15a27abbcb5:-7c26">
+    <Name>MyRuleSet</Name>
+    <Alias>MyRuleSet</Alias>
+    <ValidationUpdateNumber>101</ValidationUpdateNumber>
+    <Active>true</Active>
+    <CalendarForm>DateTime</CalendarForm>
+    <Rule id="G}-5b993b60:15a27abbcb5:-7c25">
+      <Name>ShipSurchargeRule</Name>
+      <Alias>ShipSurchargeRule</Alias>
+      <ValidationUpdateNumber>97</ValidationUpdateNumber>
+      <Priority>medium</Priority>
+      <Active>true</Active>
+      <CalendarForm>DateTime</CalendarForm>
+      <TreeMode>false</TreeMode>
+      <Visible>true</Visible>
+      <SimpleTest id="L}889">
+        <FactType>ItemT</FactType>
+        <IDofFactType>J}rulesproject.ItemT</IDofFactType>
+        <FactPath>ItemT</FactPath>
+        <FactPathIDs>L}889</FactPathIDs>
+        <Form>FormIsA</Form>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <SimpleTest id="L}890">
+        <IDofFactType>B}nil</IDofFactType>
+        <Form>FormNotNested</Form>
+        <Expression id="L}891">
+          <Value>ItemT.productWeight</Value>
+          <ResolvedValue>`L}889`.`J}rulesproject.ItemT.{productWeight}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Expression id="L}892">
+          <Value>&quot;VeryHeavy&quot;</Value>
+          <ResolvedValue>&quot;VeryHeavy&quot;</ResolvedValue>
+          <IsConstant>true</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>true</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <Pattern id="L}877">
+        <FactType>ItemT</FactType>
+        <IDofFactType>J}rulesproject.ItemT</IDofFactType>
+        <FactPath>ItemT</FactPath>
+        <FactPathIDs>L}877</FactPathIDs>
+        <Form>Fact Type</Form>
+        <Connective>&amp;&amp;</Connective>
+        <TestForm>Simple</TestForm>
+        <Expression id="L}878">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <Operator>(for each case where)</Operator>
+        <SimpleTest id="L}879">
+          <IDofFactType>B}nil</IDofFactType>
+          <Form>FormNotNested</Form>
+          <Expression id="L}880">
+            <Value>ItemT.productWeight</Value>
+            <ResolvedValue>`L}877`.`J}rulesproject.ItemT.{productWeight}`</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <Expression id="L}881">
+            <Value>&quot;VeryHeavy&quot;</Value>
+            <ResolvedValue>&quot;VeryHeavy&quot;</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterID>B}nil</ParameterID>
+          </Expression>
+          <IDofOperator>B}==</IDofOperator>
+          <Connective>&amp;&amp;</Connective>
+          <Visible>true</Visible>
+          <DSLId>B}nil</DSLId>
+        </SimpleTest>
+      </Pattern>
+      <ShowPatterns>false</ShowPatterns>
+      <Logical>false</Logical>
+      <Action id="L}882">
+        <Form>Modify</Form>
+        <Target>ItemT</Target>
+        <ResolvedTarget>`L}889`</ResolvedTarget>
+        <Expression id="L}883">
+          <Value>true</Value>
+          <ResolvedValue>true</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>extraCharge</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{extraCharge}</ParameterID>
+        </Expression>
+        <Expression id="L}884">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>productId</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{productId}</ParameterID>
+        </Expression>
+        <Expression id="L}885">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>productWeight</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{productWeight}</ParameterID>
+        </Expression>
+        <Expression id="L}886">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>quantity</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{quantity}</ParameterID>
+        </Expression>
+        <Expression id="L}887">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>shipSurcharge</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{shipSurcharge}</ParameterID>
+        </Expression>
+        <Expression id="L}888">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>unitPrice</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{unitPrice}</ParameterID>
+        </Expression>
+        <DSLId>B}nil</DSLId>
+      </Action>
+    </Rule>
+    <RuleSheet id="G}-5b993b60:15a27abbcb5:-7c24">
+      <Name>DecisionTable1</Name>
+      <Alias>DecisionTable1</Alias>
+      <ValidationUpdateNumber>101</ValidationUpdateNumber>
+      <Priority>medium</Priority>
+      <Active>true</Active>
+      <CalendarForm>DateTime</CalendarForm>
+      <TreeMode>false</TreeMode>
+      <Visible>true</Visible>
+      <SimpleTest id="L}899">
+        <FactType>ItemT</FactType>
+        <IDofFactType>J}rulesproject.ItemT</IDofFactType>
+        <FactPath>ItemT</FactPath>
+        <FactPathIDs>L}899</FactPathIDs>
+        <Form>FormIsA</Form>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>false</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <ShowPatterns>false</ShowPatterns>
+      <Logical>false</Logical>
+      <Dimension id="L}895">
+        <IDofSharedBucketSet>G}-5b993b60:15a27abbcb5:-7c2b</IDofSharedBucketSet>
+        <DimensionNode id="L}897">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c2a</BucketIDTable>
+          <Values>otherwise</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}902</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}915">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c29</BucketIDTable>
+          <Values>&quot;Light&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}916</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}922">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c28</BucketIDTable>
+          <Values>&quot;Heavy&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}923</ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}-5b993b60:15a27abbcb5:-7c23">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>98</CreationUpdateNumber>
+          <IDofType>B}nil</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Form>Default</Form>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <SharedBucketSet>ShipWeightType</SharedBucketSet>
+        <Expression id="L}896">
+          <Value>ItemT.productWeight</Value>
+          <ResolvedValue>`L}899`.`J}rulesproject.ItemT.{productWeight}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <Dimension id="L}900">
+        <IDofSharedBucketSet>B}nil</IDofSharedBucketSet>
+        <DimensionNode id="L}902">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c20</BucketIDTable>
+          <Values>&gt;=50</Values>
+          <ParentDimensionNode>L}897</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}916">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c20</BucketIDTable>
+          <Values>&gt;=50</Values>
+          <ParentDimensionNode>L}915</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}923">
+          <BucketIDTable>G}-5b993b60:15a27abbcb5:-7c20</BucketIDTable>
+          <Values>&gt;=50</Values>
+          <ParentDimensionNode>L}922</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}-5b993b60:15a27abbcb5:-7c22">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>98</CreationUpdateNumber>
+          <IDofType>J}long</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Type>long</Type>
+          <Form>Range</Form>
+          <Bucket id="G}-5b993b60:15a27abbcb5:-7c21">
+            <Name>&lt;50</Name>
+            <Alias>&lt;50</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>98</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>true</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}903">
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <Bucket id="G}-5b993b60:15a27abbcb5:-7c20">
+            <Name>&gt;=50</Name>
+            <Alias>&gt;=50</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>98</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>false</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}904">
+              <Value>50</Value>
+              <ResolvedValue>50</ResolvedValue>
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>98</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <Expression id="L}901">
+          <Value>ItemT.unitPrice.longValue()</Value>
+          <ResolvedValue>`L}899`.`J}rulesproject.ItemT.{unitPrice}`.`J}public long java.math.BigDecimal.longValue()`()</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <DTAction id="L}905">
+        <Form>Modify</Form>
+        <Target>ItemT</Target>
+        <ResolvedTarget>`L}899`</ResolvedTarget>
+        <Expression id="L}907">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>extraCharge</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{extraCharge}</ParameterID>
+        </Expression>
+        <Expression id="L}908">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>productId</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{productId}</ParameterID>
+        </Expression>
+        <Expression id="L}909">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>productWeight</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{productWeight}</ParameterID>
+        </Expression>
+        <Expression id="L}910">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>quantity</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{quantity}</ParameterID>
+        </Expression>
+        <Expression id="L}911">
+          <Value>10.0</Value>
+          <ResolvedValue>10.0</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>shipSurcharge</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{shipSurcharge}</ParameterID>
+          <DTActionParameterName>shipSurcharge</DTActionParameterName>
+        </Expression>
+        <Expression id="L}912">
+          <IsConstant>false</IsConstant>
+          <ParameterAlias>unitPrice</ParameterAlias>
+          <ParameterID>J}rulesproject.ItemT.{unitPrice}</ParameterID>
+        </Expression>
+        <DSLId>B}nil</DSLId>
+        <AlwaysSelected>true</AlwaysSelected>
+        <DTActionNode id="L}906">
+          <Selected>false</Selected>
+          <Expression id="L}919">
+            <Value>10.0</Value>
+            <ResolvedValue>10.0</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>shipSurcharge</ParameterAlias>
+            <ParameterID>J}rulesproject.ItemT.{shipSurcharge}</ParameterID>
+            <DTActionParameterName>shipSurcharge</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+        <DTActionNode id="L}918">
+          <Selected>false</Selected>
+          <Expression id="L}926">
+            <Value>15.0</Value>
+            <ResolvedValue>15.0</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>shipSurcharge</ParameterAlias>
+            <ParameterID>J}rulesproject.ItemT.{shipSurcharge}</ParameterID>
+            <DTActionParameterName>shipSurcharge</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+        <DTActionNode id="L}925">
+          <Selected>false</Selected>
+          <Expression id="L}929">
+            <Value>30.0</Value>
+            <ResolvedValue>30.0</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>shipSurcharge</ParameterAlias>
+            <ParameterID>J}rulesproject.ItemT.{shipSurcharge}</ParameterID>
+            <DTActionParameterName>shipSurcharge</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+      </DTAction>
+      <DTRule id="L}898">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>98</CreationUpdateNumber>
+      </DTRule>
+      <DTRule id="L}917">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>99</CreationUpdateNumber>
+      </DTRule>
+      <DTRule id="L}924">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>100</CreationUpdateNumber>
+      </DTRule>
+      <AllowGaps>true</AllowGaps>
+      <ConflictPolicy>manual</ConflictPolicy>
+      <OrderRulesByBucket>false</OrderRulesByBucket>
+      <VerticalOrientation>true</VerticalOrientation>
+    </RuleSheet>
+    <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
+    <CreationUpdateNumber>96</CreationUpdateNumber>
+  </RuleSet>
+  <ValidationUpdateNumber>101</ValidationUpdateNumber>
+  <UpdateNumber>101</UpdateNumber>
+  <ResourceBundle>MyRulesDictionaryTranslations</ResourceBundle>
+  <TestModel id="L}3">
+    <ValidationUpdateNumber>1</ValidationUpdateNumber>
+    <UpdateNumber>1</UpdateNumber>
+    <Validation>true</Validation>
+    <AutoSync>true</AutoSync>
+  </TestModel>
+  <Preferences id="G}12b794fd:15a232556eb:-7c30">
+    <RulesExecutionAlgorithm>RETE</RulesExecutionAlgorithm>
+    <DisallowErrorSuppression>false</DisallowErrorSuppression>
+    <PhraseSuggestions>All</PhraseSuggestions>
+    <RestrictAutoSuggestions>true</RestrictAutoSuggestions>
+    <IncludeChainedExpressions>true</IncludeChainedExpressions>
+  </Preferences>
+</RuleDictionary>

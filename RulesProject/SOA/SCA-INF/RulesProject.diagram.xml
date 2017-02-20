@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gComponent name="MyRulesDictionary">
+        <dgm:body borderWidth="2" arcRad="20" X="234" Y="119" width="130" height="61">
+            <dgm:borderColor r="178" g="138" b="53"/>
+            <dgm:lightBgColor r="255" g="226" b="142"/>
+            <dgm:darkBgColor r="255" g="198" b="77"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="224" Y="112" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/rules/plugins/resources/images/soa/decision_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="MyRulesDecisionTableSimplest">
+        <dgm:body borderWidth="2" arcRad="20" X="234" Y="26" width="130" height="61">
+            <dgm:borderColor r="178" g="138" b="53"/>
+            <dgm:lightBgColor r="255" g="226" b="142"/>
+            <dgm:darkBgColor r="255" g="198" b="77"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="224" Y="19" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/rules/plugins/resources/images/soa/decision_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+</dgm:gDiagram>

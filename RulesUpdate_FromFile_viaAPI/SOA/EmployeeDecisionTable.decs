@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="EmployeeDecisionTable">
+    <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+        <repository type="SCA-Archive">
+            <path>RulesUpdate_FromFile_viaAPI/oracle/rules/rules/EmployeeDecisionTable.rules</path>
+        </repository>
+    </ruleEngineProvider>
+    <schemaInformation>
+        <dictionary fqnPackage="rules" fqnName="EmployeeDecisionTable" updateNumber="34">
+            <schemaBrowser>
+                <package>org.example</package>
+                <namespace>http://www.example.org</namespace>
+            </schemaBrowser>
+            <schemaImport namespace="http://www.example.org" localPart="Employee.xsd" schemaLocation="Schemas/Employee.xsd">
+                <import namespace="http://www.example.org" localPart="Employee.xsd" schemaLocation="Schemas/Employee.xsd"/>
+            </schemaImport>
+        </dictionary>
+    </schemaInformation>
+</decisionServices>

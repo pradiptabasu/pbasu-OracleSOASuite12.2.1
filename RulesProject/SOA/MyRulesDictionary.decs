@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="MyRulesDictionary">
+   <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+      <repository type="SCA-Archive">
+         <path>RulesProject/oracle/rules/rulesproject/MyRulesDictionary.rules</path>
+      </repository>
+   </ruleEngineProvider>
+</decisionServices>

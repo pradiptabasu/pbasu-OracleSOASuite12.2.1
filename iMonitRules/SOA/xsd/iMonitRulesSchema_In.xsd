@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/CandidateInformation" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="Transaction">
+      <complexType>
+         <sequence>
+            <element name="TransactionDetails" maxOccurs="unbounded">
+               <complexType>
+                  <sequence>
+                     <element name="uniqueTrasactionId" type="string"/>
+                     <element name="platform" type="string"/>
+                     <element name="direction" type="string"/>
+                     <element name="messageType" type="string"/>
+                     <element name="milestone" type="string"/>
+                     <element name="source" type="string"/>
+                     <element name="target" type="string"/>
+                     <element name="serviceProvider" type="string"/>
+                     <element name="threshold" type="float"/>
+                     <element name="currentTime" type="time"/>
+                     <element name="supportTeamEmail" type="string"/>
+                     <element name="supportTeamQueue" type="string"/>
+                     <element name="outage" type="string"/>
+                     <element name="messageVersion" type="string"/>
+                     <element name="startTime" type="string"/>
+                     <element name="endTime" type="string"/>
+                     <element name="waitTime" type="float"/>
+                  </sequence>
+               </complexType>
+            </element>
+         </sequence>
+      </complexType>
+   </element>
+</schema>

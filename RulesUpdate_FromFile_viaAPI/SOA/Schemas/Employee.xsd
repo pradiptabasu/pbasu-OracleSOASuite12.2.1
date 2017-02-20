@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+    <xsd:element name="EmployeeInput">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="EmpID" type="xsd:int"/>
+                <xsd:element name="EmpName" type="xsd:string"/>
+                <xsd:element name="EmpSal" type="xsd:int"/>
+                <xsd:element name="EmpDept" type="xsd:string"/>
+                <xsd:element name="EmpRating" type="xsd:float"/>
+                <xsd:element name="EmpAge" type="xsd:string"/>
+                <xsd:element name="EmpSkill" type="xsd:string"/>
+                <xsd:element name="EmpBU" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="EmployeeOutput">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="EmpTrained" type="xsd:boolean"/>
+                <xsd:element name="EmpEligible" type="xsd:string"/>
+                <xsd:element name="EmpSal" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

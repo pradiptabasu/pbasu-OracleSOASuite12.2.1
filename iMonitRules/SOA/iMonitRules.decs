@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="iMonitRules">
+    <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+        <repository type="SCA-Archive">
+            <path>iMonitRules/oracle/rules/iMonitRules/iMonitRules.rules</path>
+        </repository>
+    </ruleEngineProvider>
+    <decisionService name="iMonitRules_iMonitRules_checkMilestoneAlert" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkMilestoneAlert">
+        <catalog>iMonitRules</catalog>
+        <pattern name="CallFunctionStateless">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkMilestoneAlert</call>
+            </arguments>
+        </pattern>
+        <pattern name="CallFunctionStateful">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkMilestoneAlert</call>
+            </arguments>
+        </pattern>
+    </decisionService>
+    <decisionService name="iMonitRules_iMonitRules_checkCycleTimeAlert" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkCycleTimeAlert">
+        <catalog>iMonitRules</catalog>
+        <pattern name="CallFunctionStateless">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkCycleTimeAlert</call>
+            </arguments>
+        </pattern>
+        <pattern name="CallFunctionStateful">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkCycleTimeAlert</call>
+            </arguments>
+        </pattern>
+    </decisionService>
+    <decisionService name="iMonitRules_iMonitRules_checkIdleTimeAlert" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkIdleTimeAlert">
+        <catalog>iMonitRules</catalog>
+        <pattern name="CallFunctionStateless">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkIdleTimeAlert</call>
+            </arguments>
+        </pattern>
+        <pattern name="CallFunctionStateful">
+            <arguments>
+                <call>iMonitRules.iMonitRules.iMonitRules_checkIdleTimeAlert</call>
+            </arguments>
+        </pattern>
+    </decisionService>
+    <schemaInformation>
+        <dictionary fqnPackage="iMonitRules" fqnName="iMonitRules" updateNumber="12601">
+            <schemaBrowser>
+                <package>com.oracle.xmlns.candidateinformation</package>
+                <namespace>http://xmlns.oracle.com/CandidateInformation</namespace>
+            </schemaBrowser>
+            <schemaImport namespace="http://xmlns.oracle.com/CandidateInformation" localPart="iMonitRulesSchema_Out.xsd" schemaLocation="xsd/iMonitRulesSchema_Out.xsd">
+                <import namespace="http://xmlns.oracle.com/CandidateInformation" localPart="iMonitRulesSchema_Out.xsd" schemaLocation="xsd/iMonitRulesSchema_Out.xsd"/>
+            </schemaImport>
+        </dictionary>
+    </schemaInformation>
+</decisionServices>

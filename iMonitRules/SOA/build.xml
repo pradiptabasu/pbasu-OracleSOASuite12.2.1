@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<project name="iMonitRules" default="all" basedir=".">
+   <property file="build.properties"/>
+   <path id="library.SOA.Designtime">
+      <pathelement location="${oracle.home}/jdev/extensions/oracle.sca.modeler.jar"/>
+   </path>
+   <path id="library.SOA.Runtime">
+      <pathelement location="${oracle.home}/soa/modules/oracle.soa.fabric_11.1.1/fabric-runtime.jar"/>
+      <pathelement location="${oracle.home}/soa/modules/oracle.soa.mgmt_11.1.1/soa-infra-mgmt.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.fabriccommon_11.1.1\fabric-common.jar"/>
+   </path>
+   <path id="library.BPEL.Runtime">
+      <pathelement location="${oracle.home}/soa/modules/oracle.soa.bpel_11.1.1/orabpel.jar"/>
+   </path>
+   <path id="library.Mediator.Runtime">
+      <pathelement location="${oracle.home}/soa/modules/oracle.soa.mediator_11.1.1/mediator_client.jar"/>
+   </path>
+   <path id="library.MDS.Runtime">
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.mds_11.1.1\mdsrt.jar"/>
+   </path>
+   <path id="library.BC4J.Service.Runtime">
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adfbcsvc.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adfbcsvc-share.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\commonj.sdo_2.1.0.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\org.eclipse.persistence_1.1.0.0_2-1.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.webservices_11.1.1\wsclient.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.web-common_11.1.1.jar"/>
+   </path>
+   <path id="library.ADFm.Designtime.API">
+      <pathelement location="${oracle.home}/adfdt/lib/adf-transactions-dt.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adfdt_common.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adflibrary.jar"/>
+      <pathelement location="${oracle.home}/ide/lib/oicons.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.javatools_11.1.1\javatools-nodeps.jar"/>
+   </path>
+   <path id="library.ADF.Model.Runtime">
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.idm_11.1.1\identitystore.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adfm.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\groovy-all-1.6.3.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adftransactionsdt.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.view_11.1.1\adf-dt-at-rt.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adfdt_common.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\adflibrary.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.xdk_11.1.0\xmlparserv2.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\db-ca.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.model_11.1.1\jdev-cm.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.ldap_11.1.1\ojmisc.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.share_11.1.1\commons-el.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.share_11.1.1\jsp-el-api.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.share_11.1.1\oracle-el.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.security_11.1.1\adf-share-security.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.adf.security_11.1.1\adf-controller-security.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\javax.activation_1.1.0.0_1-1.jar"/>
+   </path>
+   <path id="library.TopLink">
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\com.oracle.toplink_1.0.0.0_11-1-1-5-0.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\org.eclipse.persistence_1.1.0.0_2-1.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\com.bea.core.antlr.runtime_2.7.7.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\modules\javax.persistence_1.0.0.0_2-0-0.jar"/>
+   </path>
+   <path id="library.Oracle.JDBC">
+      <pathelement location="${oracle.home}/ide/macros/../../../oracle_common/modules/oracle.jdbc_11.1.1/ojdbc6dms.jar"/>
+      <pathelement location="${oracle.home}/ide/macros/../../../oracle_common/modules/oracle.nlsrtl_11.1.0/orai18n.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.odl_11.1.1\ojdl.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.dms_11.1.1\dms.jar"/>
+   </path>
+   <path id="library.Oracle.XML.Parser.v2">
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.xdk_11.1.0\xmlparserv2.jar"/>
+      <pathelement location="D:\FMW\Oracle\Middleware\oracle_common\modules\oracle.xdk_11.1.0\xml.jar"/>
+   </path>
+   <path id="classpath">
+      <path refid="library.SOA.Designtime"/>
+      <path refid="library.SOA.Runtime"/>
+      <path refid="library.BPEL.Runtime"/>
+      <path refid="library.Mediator.Runtime"/>
+      <path refid="library.MDS.Runtime"/>
+      <path refid="library.BC4J.Service.Runtime"/>
+      <path refid="library.ADFm.Designtime.API"/>
+      <path refid="library.ADF.Model.Runtime"/>
+      <path refid="library.TopLink"/>
+      <path refid="library.Oracle.JDBC"/>
+      <path refid="library.Oracle.XML.Parser.v2"/>
+   </path>
+   <target name="init">
+      <tstamp/>
+      <mkdir dir="${output.dir}"/>
+   </target>
+   <target name="all" description="Build the project" depends="compile,copy"/>
+   <target name="clean" description="Clean the project">
+      <delete includeemptydirs="true" quiet="true">
+         <fileset dir="${output.dir}" includes="**/*"/>
+      </delete>
+   </target>
+   <target name="compile" description="Compile Java source files" depends="init">
+      <javac destdir="${output.dir}" classpathref="classpath" debug="${javac.debug}" nowarn="${javac.nowarn}" deprecation="${javac.deprecation}" encoding="Cp1252" source="1.6" target="1.6">
+         <src path="src"/>
+         <src path="SCA-INF/src"/>
+      </javac>
+   </target>
+   <target name="copy" description="Copy files to output directory" depends="init">
+      <patternset id="copy.patterns">
+         <include name="**/*.gif"/>
+         <include name="**/*.jpg"/>
+         <include name="**/*.jpeg"/>
+         <include name="**/*.png"/>
+         <include name="**/*.properties"/>
+         <include name="**/*.xml"/>
+         <include name="**/*.ejx"/>
+         <include name="**/*.xcfg"/>
+         <include name="**/*.cpx"/>
+         <include name="**/*.dcx"/>
+         <include name="**/*.sva"/>
+         <include name="**/*.wsdl"/>
+         <include name="**/*.ini"/>
+         <include name="**/*.tld"/>
+         <include name="**/*.tag"/>
+         <include name="**/*.xlf"/>
+         <include name="**/*.xsl"/>
+         <include name="**/*.xsd"/>
+         <include name="**/*.exm"/>
+         <include name="**/*.xml"/>
+         <include name="**/*.exm"/>
+         <include name="**/*.xml"/>
+      </patternset>
+      <copy todir="${output.dir}">
+         <fileset dir="src">
+            <patternset refid="copy.patterns"/>
+         </fileset>
+         <fileset dir="SCA-INF/src">
+            <patternset refid="copy.patterns"/>
+         </fileset>
+      </copy>
+   </target>
+</project>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SOAConfigPlan xmlns:jca="http://platform.integration.oracle/blocks/adapter/fw/metadata" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:orawsp="http://schemas.oracle.com/ws/2006/01/policy" xmlns:edl="http://schemas.oracle.com/events/edl" xmlns="http://schemas.oracle.com/soa/configplan">
+   <composite name="iMonitRules">
+      <import>
+         <searchReplace>
+            <search/>
+            <replace/>
+         </searchReplace>
+      </import>
+      <service name="iMonitRules_iMonitRules_checkIdleTimeAlert">
+         <binding type="ws">
+            <attribute name="port">
+               <replace>http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkIdleTimeAlert#wsdl.endpoint(iMonitRules_iMonitRules_checkIdleTimeAlert/IDecisionService_pt)</replace>
+            </attribute>
+         </binding>
+      </service>
+      <service name="iMonitRules_iMonitRules_checkMilestoneAlert">
+         <binding type="ws">
+            <attribute name="port">
+               <replace>http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkMilestoneAlert#wsdl.endpoint(iMonitRules_iMonitRules_checkMilestoneAlert/IDecisionService_pt)</replace>
+            </attribute>
+         </binding>
+      </service>
+      <service name="iMonitRules_iMonitRules_checkCycleTimeAlert">
+         <binding type="ws">
+            <attribute name="port">
+               <replace>http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkCycleTimeAlert#wsdl.endpoint(iMonitRules_iMonitRules_checkCycleTimeAlert/IDecisionService_pt)</replace>
+            </attribute>
+         </binding>
+      </service>
+   </composite>
+   <wsdlAndSchema name="iMonitRules_iMonitRules_checkCycleTimeAlert.wsdl|iMonitRules_iMonitRules_checkIdleTimeAlert.wsdl|iMonitRules_iMonitRules_checkMilestoneAlert.wsdl|xsd/iMonitRulesSchema_In.xsd|xsd/iMonitRulesSchema_Out.xsd|xsd/iMonitRules_iMonitRules_checkCycleTimeAlertTypes.xsd|xsd/iMonitRules_iMonitRules_checkIdleTimeAlertTypes.xsd|xsd/iMonitRules_iMonitRules_checkMilestoneAlertTypes.xsd">
+      <searchReplace>
+         <search/>
+         <replace/>
+      </searchReplace>
+   </wsdlAndSchema>
+</SOAConfigPlan>

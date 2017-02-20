@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gService name="iMonitRules_iMonitRules_checkIdleTimeAlert">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="26" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="19" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="iMonitRules_iMonitRules_checkIdleTimeAlert" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkIdleTimeAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>callFunctionStateless</dgm:item>
+            <dgm:item>callFunctionStateful</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="iMonitRules_iMonitRules_checkMilestoneAlert">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="156" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="149" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="iMonitRules_iMonitRules_checkMilestoneAlert" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkMilestoneAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>callFunctionStateless</dgm:item>
+            <dgm:item>callFunctionStateful</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="iMonitRules_iMonitRules_checkCycleTimeAlert">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="286" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="279" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="iMonitRules_iMonitRules_checkCycleTimeAlert" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkCycleTimeAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>callFunctionStateless</dgm:item>
+            <dgm:item>callFunctionStateful</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gComponent name="iMonitRules">
+        <dgm:body borderWidth="2" arcRad="20" X="375" Y="148" width="130" height="111">
+            <dgm:borderColor r="178" g="138" b="53"/>
+            <dgm:lightBgColor r="255" g="226" b="142"/>
+            <dgm:darkBgColor r="255" g="198" b="77"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="365" Y="141" width="150" height="127">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="iMonitRules_iMonitRules_checkIdleTimeAlert" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkIdleTimeAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:inputPort name="iMonitRules_iMonitRules_checkMilestoneAlert" X="-10" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkMilestoneAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:inputPort name="iMonitRules_iMonitRules_checkCycleTimeAlert" X="-10" Y="65" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/iMonitRules/iMonitRules_iMonitRules_checkCycleTimeAlert#wsdl.interface(IDecisionService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/rules/plugins/resources/images/soa/decision_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gWireLink source="iMonitRules_iMonitRules_checkIdleTimeAlert" target="iMonitRules/iMonitRules_iMonitRules_checkIdleTimeAlert" width="2">
+        <dgm:gSegment X1="168" Y1="36" X2="207" Y2="36"/>
+        <dgm:gSegment X1="207" Y1="36" X2="207" Y2="173"/>
+        <dgm:gSegment X1="207" Y1="173" X2="365" Y2="173"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="iMonitRules_iMonitRules_checkMilestoneAlert" target="iMonitRules/iMonitRules_iMonitRules_checkMilestoneAlert" width="2">
+        <dgm:gSegment X1="168" Y1="166" X2="192" Y2="166"/>
+        <dgm:gSegment X1="192" Y1="166" X2="192" Y2="198"/>
+        <dgm:gSegment X1="192" Y1="198" X2="365" Y2="198"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="iMonitRules_iMonitRules_checkCycleTimeAlert" target="iMonitRules/iMonitRules_iMonitRules_checkCycleTimeAlert" width="2">
+        <dgm:gSegment X1="168" Y1="296" X2="192" Y2="296"/>
+        <dgm:gSegment X1="192" Y1="296" X2="192" Y2="223"/>
+        <dgm:gSegment X1="192" Y1="223" X2="365" Y2="223"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+</dgm:gDiagram>

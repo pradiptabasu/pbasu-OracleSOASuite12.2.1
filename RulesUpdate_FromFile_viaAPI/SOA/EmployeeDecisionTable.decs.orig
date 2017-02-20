@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="EmployeeDecisionTable">
+   <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+      <repository type="SCA-Archive">
+         <path>RulesUpdate_FromFile_viaAPI/oracle/rules/rules/EmployeeDecisionTable.rules</path>
+      </repository>
+   </ruleEngineProvider>
+   <decisionService name="EmployeeDecisionTable_DecisionService_1" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/EmployeeDecisionTable/EmployeeDecisionTable_DecisionService_1">
+      <catalog>EmployeeDecisionTable</catalog>
+      <pattern name="CallFunctionStateless">
+         <arguments>
+            <call>rules.EmployeeDecisionTable.DecisionService_1</call>
+         </arguments>
+      </pattern>
+      <pattern name="CallFunctionStateful">
+         <arguments>
+            <call>rules.EmployeeDecisionTable.DecisionService_1</call>
+         </arguments>
+      </pattern>
+   </decisionService>
+</decisionServices>
